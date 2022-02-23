@@ -1,0 +1,19 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.folder {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.folder::before {
+  content: '>';
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  display: inline;
+  font-size: 16px;
+  margin-right: 4px;
+}
