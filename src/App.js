@@ -11,9 +11,13 @@ const folderStructure = [
         isFolder: true,
         childs: [
           {
-            name: 'components_file',
+            name: 'menu-component',
             isFolder: true,
-            childs: [],
+            childs: [
+              {
+                name: 'menu-component',
+              },
+            ],
           },
         ],
       },
@@ -23,7 +27,7 @@ const folderStructure = [
         childs: [],
       },
       {
-        name: 'index.js',
+        name: 'index',
         isFolder: false,
       },
     ],
@@ -66,7 +70,6 @@ const Folder = ({ folder, offset }) => {
 
 const FolderStructure = (props) => {
   const { folders } = props;
-  console.log(folders);
   return (
     <div>
       {folders.map((folder) => (
@@ -79,6 +82,7 @@ const FolderStructure = (props) => {
 export default function App() {
   return (
     <div>
+      <h1>Folder Structure App</h1>
       <FolderStructure folders={folderStructure} />
     </div>
   );

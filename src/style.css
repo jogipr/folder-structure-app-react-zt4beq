@@ -1,19 +1,28 @@
-h1,
-p {
-  font-family: Lato;
+h1{
+  background-color: #F9D923;
+  padding: 1rem;
+}
+body{
+  background-color: #EEEEEE;
 }
 
 .folder {
   font-size: 16px;
   cursor: pointer;
+  color: #eb5353;
 }
 
 .folder::before {
   content: '>';
   width: 20px;
   height: 20px;
-  background: yellow;
+  color: #eb5353;
   display: inline;
   font-size: 16px;
   margin-right: 4px;
+  font-weight: 900;
+}
+
+.file{
+  color: #36AE7C;
 }
